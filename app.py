@@ -9,9 +9,9 @@ app.config["MONGO_URI"] = "mongodb://localhost:27017/mortgage_app"
 mongo = PyMongo(app)
 
 @app.route("/")
-def home():
+def index():
     news_scrap = mongo.db.collection.find_one()
-    return render_template("home.html", news_scrap=news_scrap)
+    return render_template("index.html", news_scrap=news_scrap)
 
 
 @app.route("/scrap")
