@@ -30,12 +30,12 @@
     <!-- Navigation -->
     <nav class="navbar navbar-light bg-light static-top">
       <div class="container">
-          <a class="navbar-brand" href="{{url_for('index.html')}}">Real Estate</a>
-          <a class="btn btn-primary" href="{url_for('price_factors.html')}}">Housing Value Factors</a>
-          <a class="btn btn-secondary" href="{url_for('timeseries.html')}}">Housing Value Timeseries</a>
-          <a class="btn btn-secondary" href="{url_for('leaflet.html')}}">US Housing Value Map</a>
-          <a class="btn btn-secondary" href="{url_for('dataexploration.html')}}">Data Exploration</a>
-          <a class="btn btn-secondary" href="/scrap">Scarp New Data</a>
+        <a class="navbar-brand" href="{{url_for('index')}}">Real Estate</a>
+        <a class="btn btn-primary" href="{{url_for('static',filename='html/price_factors.html')}}">Housing Value Factors</a>
+        <a class="btn btn-secondary" href="{{url_for('static',filename='html/timeseries.html')}}">Housing Value Timeseries</a>
+        <a class="btn btn-secondary" href="{{url_for('static',filename='html/leaflet.html')}}">US Housing Value Map</a>
+        <a class="btn btn-secondary" href="{{url_for('static',filename='html/data_exploration.html')}}">Data Exploration</a>
+        <a class="btn btn-secondary" href="{{url_for('scraper')}}">Scarp New Data</a>
       </div>
     </nav>
 
@@ -169,7 +169,6 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="{{ url_for('static', filename='map.js') }}"></script>
     <script src="{{url_for('static',filename='css/jquery.min.js')}}"></script>
     <script src="{{url_for('static',filename='css/bootstrap.bundle.min.js')}}"></script>
 

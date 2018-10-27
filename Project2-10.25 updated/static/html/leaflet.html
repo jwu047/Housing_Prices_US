@@ -9,15 +9,15 @@
 
     <title>US Housing Value Choropleth</title>
     <!-- Bootstrap core CSS -->
-    <link href="{{url_for('static',filename='css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="{{url_for('static',filename='css/all.min.css')}}" rel="stylesheet">
-    <link href="{{url_for('static',filename='css/simple-line-icons.css')}}" rel="stylesheet" type="text/css">
+    <link href="../css/all.min.css" rel="stylesheet">
+    <link href="../css/simple-line-icons.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template -->
-    <link href="{{url_for('static',filename='css/landing-page.min.css')}}" rel="stylesheet">
+    <link href="../css/landing-page.min.css" rel="stylesheet">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
@@ -31,10 +31,10 @@
     <script src="https://d3js.org/d3.v4.min.js"></script>
 
     <!-- Leaflet-Choropleth JavaScript -->
-    <script type="text/javascript" src="../static/mapbox/choropleth.js"></script>
+    <script type="text/javascript" src="../mapbox/choropleth.js"></script>
 
     <!-- Our CSS -->
-   <link rel="stylesheet" type="text/css" href="../static/mapbox/mapbox_style.css">
+   <link rel="stylesheet" type="text/css" href="../mapbox/mapbox_style.css">
 
   </head>
   <body>
@@ -51,10 +51,10 @@
                                   <span class="icon-bar"></span>
                                 </button>
                                 <a class="navbar-brand" href="{{url_for('index')}}">Real Estate</a>
-                                <a class="btn btn-primary" href="{{url_for('price_factors')}}">Housing Value Factors</a>
-                                <a class="btn btn-secondary" href="{{url_for('timeseries')}}">Housing Value Timeseries</a>
-                                <a class="btn btn-secondary" href="{{url_for('leaflet')}}">US Housing Value Map</a>
-                                <a class="btn btn-secondary" href="{{url_for('data_exploration')}}">Data Exploration</a>
+                                <a class="btn btn-primary" href="price_factors.html">Housing Value Factors</a>
+                                <a class="btn btn-secondary" href="timeseries.html">Housing Value Timeseries</a>
+                                <a class="btn btn-secondary" href="leaflet.html">US Housing Value Map</a>
+                                <a class="btn btn-secondary" href="dataexploration.html">Data Exploration</a>
                               </div>
                                                      
                             
@@ -66,8 +66,8 @@
     <!-- The div where we will inject our map -->
     <div id="map"></div>
 
-    <script type="text/javascript" src="../static/mapbox/config.js"></script>
-    <script type="text/javascript" src="../static/mapbox/logic.js"></script>
+    <script type="text/javascript" src="../mapbox/config.js"></script>
+    <script type="text/javascript" src="../mapbox/logic.js"></script>
 
   </body>
 </html>

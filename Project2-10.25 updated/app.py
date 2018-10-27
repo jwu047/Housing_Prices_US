@@ -28,6 +28,26 @@ def index():
     #     return redirect("/", code=302)
 
 
+# @app.route("/price_factors")
+# def price_factors():
+#     return render_template("price_factors.html")
+
+
+# @app.route("/timeseries")
+# def timeseries():
+#     return render_template("timeseries.html")
+
+
+# @app.route("/leaflet")
+# def leaflet():
+#     return render_template("leaflet.html")
+
+
+# @app.route("/data_exploration")
+# def data_exploration():
+#     return render_template("dataexploration.html")
+
+
 @app.route("/scrap")
 def scraper():
 
