@@ -29,7 +29,7 @@ var geojson;
     scale: ["lightyellow", "#b10026"],
 
     // Number of breaks in step range
-    steps: 10,
+    steps: 15,
 
     // q for quartile, e for equidistant, k for k-means
     mode: "q",
