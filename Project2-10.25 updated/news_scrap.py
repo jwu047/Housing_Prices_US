@@ -65,7 +65,7 @@ def scrap():
     #Use Pandas to scrape the table
     tables = pd.read_html(url)
     df = tables[0]
-    df = df.drop([0])
+    df = df.drop([0,1])
     df =df.drop(df.columns[[2,3,4]],axis=1)
     df.columns = ['Type', 'Rate']
     df.set_index('Type', inplace=True)

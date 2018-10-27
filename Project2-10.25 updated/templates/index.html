@@ -10,16 +10,18 @@
 
     <title>Real Estate</title>
 
+    <!--<link href="{{ url_for('static', filename='path') }}">-->
+
     <!-- Bootstrap core CSS -->
-    <link href="../static/bootstrap.min.css" rel="stylesheet">
+    <link href="{{url_for('static',filename='css/bootstrap.min.css')}}" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="../static/all.min.css" rel="stylesheet">
-    <link href="../static/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="{{url_for('static',filename='css/all.min.css')}}" rel="stylesheet">
+    <link href="{{url_for('static',filename='css/simple-line-icons.css')}}" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template -->
-    <link href="../static/landing-page.min.css" rel="stylesheet">
+    <link href="{{url_for('static',filename='css/landing-page.min.css')}}" rel="stylesheet">
 
   </head>
 
@@ -28,12 +30,12 @@
     <!-- Navigation -->
     <nav class="navbar navbar-light bg-light static-top">
       <div class="container">
-          <a class="navbar-brand" href="index.html">Real Estate</a>
-          <a class="btn btn-primary" href="price_factors.html">Housing Value Factors</a>
-          <a class="btn btn-secondary" href="timeseries.html">Housing Value Timeseries</a>
-          <a class="btn btn-secondary" href="leaflet.html">US Housing Value Map</a>
-          <a class="btn btn-tertiary" href="dataexploration.html">Data Exploration</a>
-          <a class="btn btn-tertiary" href="/scrap">Scarp New Data</a>
+          <a class="navbar-brand" href="{{url_for('index.html')}}">Real Estate</a>
+          <a class="btn btn-primary" href="{url_for('price_factors.html')}}">Housing Value Factors</a>
+          <a class="btn btn-secondary" href="{url_for('timeseries.html')}}">Housing Value Timeseries</a>
+          <a class="btn btn-secondary" href="{url_for('leaflet.html')}}">US Housing Value Map</a>
+          <a class="btn btn-secondary" href="{url_for('dataexploration.html')}}">Data Exploration</a>
+          <a class="btn btn-secondary" href="/scrap">Scarp New Data</a>
       </div>
     </nav>
 
@@ -45,7 +47,7 @@
           <div class="col-xl-9 mx-auto">
             <h1 class="mb-5">A Closer Look at Real Estate You Never Seen Before</h1>
             <!-- masthead image -->
-            <iframe style = "background-image" width="5000" height="500" scrolling="no" style = "background-image" frameborder="no" src="../static/mastheadimage.jpg"></iframe>
+            <iframe style = "background-image" width="5000" height="500" scrolling="no" style = "background-image" frameborder="no" src="../static/image/mastheadimage.jpg"></iframe>
           </div>
           <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
             <form>
@@ -71,7 +73,7 @@
            
           <!-- Insert image for twitter maybe -->
 
-          <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('static/twitter.png');"></div>
+          <div class="col-lg-6 order-lg-2 text-white showcase-img" style= "background-image: url('static/image/twitter.png');"></div>
           <div class="col-lg-6 order-lg-1 my-auto showcase-text">
             <h2>Data Exploration</h2>
             <p class="lead mb-0">Text insert</p>
@@ -168,8 +170,8 @@
 
     <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="{{ url_for('static', filename='map.js') }}"></script>
-    <script src="../static/jquery.min.js"></script>
-    <script src="../static/bootstrap.bundle.min.js"></script>
+    <script src="{{url_for('static',filename='css/jquery.min.js')}}"></script>
+    <script src="{{url_for('static',filename='css/bootstrap.bundle.min.js')}}"></script>
 
   </body>
 
