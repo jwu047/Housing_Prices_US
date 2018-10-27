@@ -35,7 +35,7 @@
         <a class="btn btn-secondary" href="{{url_for('static',filename='html/timeseries.html')}}">Housing Value Timeseries</a>
         <a class="btn btn-secondary" href="{{url_for('static',filename='html/leaflet.html')}}">US Housing Value Map</a>
         <a class="btn btn-secondary" href="{{url_for('static',filename='html/dataexploration.html')}}">Data Exploration</a>
-        <a class="btn btn-secondary" href="{{url_for('index')}}">Scarp New Data</a>
+        <a class="btn btn-secondary" href="{{url_for('index')}}">Scrape New Data</a>
       </div>
     </nav>
 
@@ -105,7 +105,7 @@
           <div class="col-lg-4">
             <div class="testimonial-item mx-auto mb-5 mb-lg-0">
               <img class="img-fluid rounded-circle mb-3" src="{{url_for('static',filename='image/money.png')}}" alt="">
-              <button type="button" class="btn btn-light" href="/housing-price-states-map">Average Income</button>
+              <button type="button" class="btn btn-light" href="{{url_for('static',filename='html/housing_price_states_map.html')}}">Average Income</button>
               <p class="font-weight-light mb-0">Average income of the 50 states.</p>
             </div>
           </div>
@@ -113,7 +113,7 @@
           <div class="col-lg-4">
             <div class="testimonial-item mx-auto mb-5 mb-lg-0">
               <img class="img-fluid rounded-circle mb-3" src="{{url_for('static',filename='image/crime.jpg')}}" alt="">
-              <button type="button" class="btn btn-light" href="/housing-price-states-map">Crime Index</button>
+              <button type="button" class="btn btn-light" href="{{url_for('static',filename='html/housing_price_states_map.html')}}">Pricing</button>
               <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
@@ -130,7 +130,7 @@
             <div class="testimonial-item mx-auto mb-5 mb-lg-0">
               <img class="img-fluid rounded-circle mb-3" src="{{url_for('static',filename='image/people.png')}}" alt="">
               <!--modals-->
-              <button type="button" class="btn btn-light" href="/housing-price-states-map">Less Populated</button>
+              <button type="button" class="btn btn-light" href="{{url_for('static',filename='html/housing_price_states_map.html')}}">Less Populated</button>
 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal_content">
@@ -165,7 +165,7 @@
               </li>
               <li class="list-inline-item">&sdot;</li>
               <li class="list-inline-item">
-                <a href="#https://www.zillow.com/research/data/">Zillow Data</a>
+                <a href="https://www.zillow.com/research/data/">Zillow Data</a>
               </li>
             </ul>
             <p class="text-muted small mb-4 mb-lg-0">&copy; Team Rocket. All Rights Reserved.</p>
