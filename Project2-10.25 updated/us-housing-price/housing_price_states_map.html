@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Housing price Homepage</title>
+    <!-- <link rel="stylesheet" type="text/css" href="bootstrap"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://bootswatch.com/3/cerulean/bootstrap.min.css"/>
+
+</head>
+<body>   
+    <div id="container">
+        <div class="row">
+            <div class="col-md-12">
+                    <nav class="navbar navbar-inverse">
+                            <div class="container-fluid">
+                              <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                                  <span class="sr-only">Toggle navigation</span>
+                                  <span class="icon-bar"></span>
+                                  <span class="icon-bar"></span>
+                                  <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="/">Home</a>
+                              </div>
+                          
+                              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                                <!--<ul class="nav navbar-nav">
+                                  <li><a href="/crime">Housing price</a></li>
+                                  <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Chicago Communities <span class="caret"></span></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li>
+                                        <div class="row" style="width: 400px;">
+                                            <ul class="list-unstyled col-md-3">
+                                                <li><strong>Central</strong></li>  
+                                                <li><a href="/dash/8">Near North Side</a></li>
+                                                <li><a href="/dash/32">Loop</a></li>
+                                                <li><a href="/dash/33">Near South Side</a></li>
+                                                <li class="divider"></li>
+                                                <li><strong>North Side</strong></li>
+                                                <li><a href="/dash/5">North Center</a></li>
+                                                <li><a href="/dash/6">Lake View</a></li>
+                                                <li><a href="/dash/7">Lincoln Park</a></li>
+                                                <li><a href="/dash/21">Avondale</a></li>
+                                                <li><a href="/dash/22">Logan Square</a></li>
+                                                <li class="divider"></li>
+                                                <li><strong>Far North Side</strong></li>  
+                                                <li><a href="/dash/1">Rogers Park</a></li>
+                                                <li><a href="/dash/2">West Ridge</a></li>
+                                                <li><a href="/dash/3">Uptown</a></li>
+                                                <li><a href="/dash/4">Lincoln Square</a></li>
+                                                <li><a href="/dash/9">Edison Park</a></li>
+                                                <li><a href="/dash/10">Norwood Park</a></li>
+                                                <li><a href="/dash/11">Jefferson Park</a></li>
+                                                <li><a href="/dash/12">Forest Glen</a></li>
+                                                <li><a href="/dash/13">North Park</a></li>
+                                                <li><a href="/dash/14">Albany Park</a></li>
+                                                <li><a href="/dash/76">O'Hare</a></li>
+                                                <li><a href="/dash/77">Edgewater</a></li>
+                                            </ul>
+                                            <ul class="list-unstyled col-md-3">
+                                                <li><strong>Northwest Side</strong></li>  
+                                                <li><a href="/dash/15">Portage Park</a></li>
+                                                <li><a href="/dash/16">Irving Park</a></li>
+                                                <li><a href="/dash/17">Dunning</a></li>
+                                                <li><a href="/dash/18">Montclare</a></li>
+                                                <li><a href="/dash/19">Belmont Cragin</a></li>
+                                                <li><a href="/dash/20">Hermosa</a></li>
+                                                <li class="divider"></li>
+                                                <li><strong>West Side</strong></li>
+                                                <li><a href="/dash/23">Humboldt Park</a></li>
+                                                <li><a href="/dash/24">West Town</a></li>
+                                                <li><a href="/dash/25">Austin</a></li>
+                                                <li><a href="/dash/26">West Garfield Park</a></li>
+                                                <li><a href="/dash/27">East Garfield Park</a></li>
+                                                <li><a href="/dash/28">Near West Side</a></li>
+                                                <li><a href="/dash/29">North Lawndale</a></li>
+                                                <li><a href="/dash/30">South Lawndale</a></li>
+                                                <li><a href="/dash/31">Lower West Side</a></li>
+                                            </ul>
+                                            <ul class="list-unstyled col-md-3">
+                                                <li><strong>South Side</strong></li>  
+                                                <li><a href="/dash/34">Armour Square</a></li>
+                                                <li><a href="/dash/35">Douglas</a></li>
+                                                <li><a href="/dash/36">Oakland</a></li>
+                                                <li><a href="/dash/37">Fuller Park</a></li>
+                                                <li><a href="/dash/38">Grand Boulevard</a></li>
+                                                <li><a href="/dash/39">Kenwood</a></li>
+                                                <li><a href="/dash/40">Washington Park</a></li>
+                                                <li><a href="/dash/41">Hyde Park</a></li>
+                                                <li><a href="/dash/42">Woodlawn</a></li>
+                                                <li><a href="/dash/43">South Shore</a></li>
+                                                <li><a href="/dash/60">Bridgeport</a></li>
+                                                <li><a href="/dash/69">Greater Grand Crossing</a></li>
+                                                <li class="divider"></li>
+                                                <li><strong>Southwest Side</strong></li>  
+                                                <li><a href="/dash/56">Garfield Ridge</a></li>
+                                                <li><a href="/dash/57">Archer Heights</a></li>
+                                                <li><a href="/dash/58">Brighton Park</a></li>
+                                                <li><a href="/dash/59">McKinley Park</a></li>
+                                                <li><a href="/dash/61">New City</a></li>
+                                                <li><a href="/dash/62">West Elsdon</a></li>
+                                                <li><a href="/dash/63">Gage Park</a></li>
+                                                <li><a href="/dash/64">Clearing</a></li>
+                                                <li><a href="/dash/65">West Lawn</a></li>
+                                                <li><a href="/dash/66">Chicago Lawn</a></li>
+                                                <li><a href="/dash/67">West Englewood</a></li>
+                                                <li><a href="/dash/68">Englewood</a></li>
+                                                </ul>
+                                                <ul class="list-unstyled col-md-3">
+                                                <li><strong>Far Southeast Side</strong></li>
+                                                <li><a href="/dash/44">Chatham</a></li>
+                                                <li><a href="/dash/45">Avalon Park</a></li>
+                                                <li><a href="/dash/46">South Chicago</a></li>
+                                                <li><a href="/dash/47">Burnside</a></li>
+                                                <li><a href="/dash/48">Calumet Heights</a></li>
+                                                <li><a href="/dash/49">Roseland</a></li>
+                                                <li><a href="/dash/50">Pullman</a></li>
+                                                <li><a href="/dash/51">South Deering</a></li>
+                                                <li><a href="/dash/52">East Side</a></li>
+                                                <li><a href="/dash/53">West Pullman</a></li>
+                                                <li><a href="/dash/54">Riverdale</a></li>
+                                                <li><a href="/dash/55">Hegewisch</a></li>
+                                                <li class="divider"></li>
+                                                <li><strong>Far Southwest Side</strong></li>  
+                                                <li><a href="/dash/70">Ashburn</a></li>
+                                                <li><a href="/dash/71">Auburn Gresham</a></li>
+                                                <li><a href="/dash/72">Beverly</a></li>
+                                                <li><a href="/dash/73">Washington Heights</a></li>
+                                                <li><a href="/dash/74">Mount Greenwood</a></li>
+                                                <li><a href="/dash/75">Morgan Park</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>-->
+                              </li>
+                            </ul>
+                                <ul class="nav navbar-nav navbar-right">
+                                  <li><a href="/about">About</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </nav>
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 align="center"><strong>2018 Average Home Price</strong></h2>
+            </div>
+            <!--<div class="col-md-6">
+                    <h2 align="center"><strong>2017 Crime Frequency by Type</strong></h2>
+            </div> -->
+        </div> 
+        
+        <div class="row">
+            <div class="col-md-5 col-md-offset-1"> 
+                <!-- map with mean housing price -->
+                <iframe width="1000" height="500" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col0+from+1A3NwWQxWnzpn4MAbC20lsnWuS52xs9wP_BCVhtoN&amp;viz=MAP&amp;h=false&amp;lat=39.640128703555845&amp;lng=-99.82089945832246&amp;t=1&amp;z=5&amp;l=col0&amp;y=2&amp;tmplt=2&amp;hml=ONE_COL_LAT_LNG"></iframe>
+                <!--<iframe width="500" height="500" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col0%2C+col7+from+1sI7Y-JZRmhZ2rQwoQBkZuKikWNuM5HjhdGPxTVh0+limit+1000&amp;viz=HEATMAP&amp;h=true&amp;lat=32.68114113253548&amp;lng=-113.99737333858161&amp;t=1&amp;z=4&amp;l=col0&amp;y=2&amp;tmplt=3&amp;hmd=true&amp;hmg=%2366ff0000%2C%2393ff00ff%2C%23c1ff00ff%2C%23eeff00ff%2C%23f4e300ff%2C%23f4e300ff%2C%23f9c600ff%2C%23ffaa00ff%2C%23ff7100ff%2C%23ff3900ff%2C%23ff0000ff&amp;hmo=0.52&amp;hmr=32&amp;hmw=7&amp;hml=ONE_COL_LAT_LNG"></iframe> -->
+            </div>
+            <div class="col-md-5 col-md-offset-1"> 
+                <!-- graph -->
+                <!-- comparison graph between average income and mean housing price FY 2018 (from Jan to Sept) for 50 states-->
+                <iframe width="1000" height="500" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?containerId=googft-gviz-canvas&amp;q=select+col0%2C+col7%2C+col4+from+1A3NwWQxWnzpn4MAbC20lsnWuS52xs9wP_BCVhtoN+order+by+col7+desc+limit+51&amp;viz=GVIZ&amp;t=COLUMN&amp;uiversion=2&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;gco_vAxes=%5B%7B%22title%22%3Anull%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%7D%2C%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%7D%5D&amp;gco_useFirstColumnAsDomain=true&amp;gco_legacyScatterChartLabels=true&amp;gco_isStacked=false&amp;gco_booleanRole=certainty&amp;gco_hAxis=%7B%22useFormatFromData%22%3Atrue%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22viewWindow%22%3Anull%2C+%22viewWindowMode%22%3Anull%2C+%22title%22%3A%22State%22%7D&amp;gco_legend=right&amp;gco_title=Comparison+between+average+income+and+mean+home+price&amp;gco_backgroundColor=%7B%22fill%22%3A%22%23fce5cd%22%7D&amp;width=1000&amp;height=500"></iframe>
+                
+                <!-- pie chart for top 15 states with highest crime index -->
+                <iframe width="500" height="300" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?containerId=googft-gviz-canvas&amp;q=select+col0%2C+col6+from+1A3NwWQxWnzpn4MAbC20lsnWuS52xs9wP_BCVhtoN+order+by+col6+desc+limit+15&amp;viz=GVIZ&amp;t=PIE&amp;uiversion=2&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;gco_useFirstColumnAsDomain=true&amp;gco_legacyScatterChartLabels=true&amp;gco_is3D=false&amp;gco_pieHole=0&amp;gco_booleanRole=certainty&amp;gco_hAxis=%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%7D&amp;gco_vAxes=%5B%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%7D%2C%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%7D%5D&amp;gco_title=Top+15+states+for+highest+crime&amp;width=500&amp;height=500"></iframe>               
+                
+                <!-- horizontal bar graph for income vs states -->
+                <iframe width="500" height="300" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?containerId=googft-gviz-canvas&amp;q=select+col0%2C+col4+from+1A3NwWQxWnzpn4MAbC20lsnWuS52xs9wP_BCVhtoN+order+by+col4+asc+limit+51&amp;viz=GVIZ&amp;t=BAR&amp;uiversion=2&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;gco_useFirstColumnAsDomain=true&amp;gco_legacyScatterChartLabels=true&amp;gco_isStacked=false&amp;gco_booleanRole=certainty&amp;gco_hAxis=%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22title%22%3A%22Average+income+(%24)%22%7D&amp;gco_vAxes=%5B%7B%22useFormatFromData%22%3Atrue%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22viewWindow%22%3Anull%2C+%22viewWindowMode%22%3Anull%7D%2C%7B%22useFormatFromData%22%3Atrue%7D%5D&amp;gco_legend=right&amp;gco_title=Average+income+for+50+states&amp;gco_tooltip=%7B%22isHtml%22%3Atrue%7D&amp;tmplt=6&amp;width=500&amp;height=300"></iframe>
+                <!--<iframe width="700" height="500" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?containerId=googft-gviz-canvas&amp;viz=GVIZ&amp;t=LINE_AGGREGATE&amp;isXyPlot=true&amp;bsize=0.0&amp;q=select+col0%2C+col3%2C+col9%2C+col6+from+1Z6gg5BH-I6NFyEo08z6CQCFVSQbFFDCFsnR2kcOe&amp;qrs=+where+col0+%3E%3D+&amp;qre=+and+col0+%3C%3D+&amp;qe=+order+by+col0+asc&amp;uiversion=2&amp;rstart=1.0&amp;rend=77.06946983546618&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;width=700&amp;height=500"></iframe>-->
+                
+                <!-- horizontal bar graph for crime for 50 states-->
+                <iframe width="500" height="300" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?containerId=googft-gviz-canvas&amp;q=select+col0%2C+col6+from+1A3NwWQxWnzpn4MAbC20lsnWuS52xs9wP_BCVhtoN+order+by+col6+asc+limit+51&amp;viz=GVIZ&amp;t=BAR&amp;uiversion=2&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;gco_useFirstColumnAsDomain=true&amp;gco_legacyScatterChartLabels=true&amp;gco_isStacked=false&amp;gco_booleanRole=certainty&amp;gco_hAxis=%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22title%22%3A%22Crime+index%22%7D&amp;gco_vAxes=%5B%7B%22useFormatFromData%22%3Atrue%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22viewWindow%22%3Anull%2C+%22viewWindowMode%22%3Anull%7D%2C%7B%22useFormatFromData%22%3Atrue%7D%5D&amp;gco_legend=right&amp;gco_series=%7B%220%22%3A%7B%22color%22%3A%22%23cc4125%22%7D%7D&amp;gco_title=Crime+index+for+50+states&amp;width=500&amp;height=300"></iframe>
+            
+                <!-- 15 lowest population states with average housing price in 2018-->
+                <iframe width="500" height="300" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?containerId=googft-gviz-canvas&amp;q=select+col0%2C+col2%2C+col7+from+1A3NwWQxWnzpn4MAbC20lsnWuS52xs9wP_BCVhtoN+order+by+col2+asc+limit+15&amp;viz=GVIZ&amp;t=COLUMN&amp;uiversion=2&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;gco_vAxes=%5B%7B%22title%22%3Anull%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22logScale%22%3Afalse%7D%2C%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22logScale%22%3Afalse%7D%5D&amp;gco_useFirstColumnAsDomain=true&amp;gco_legacyScatterChartLabels=true&amp;gco_isStacked=false&amp;gco_booleanRole=certainty&amp;gco_hAxis=%7B%22useFormatFromData%22%3Atrue%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22viewWindow%22%3Anull%2C+%22viewWindowMode%22%3Anull%2C+%22title%22%3A%22State%22%7D&amp;gco_legend=right&amp;gco_title=15+lowest+population+states+with+Average+home+price+in+2018&amp;width=500&amp;height=300"></iframe>
+            </div>
+        </div> 
+
+    </div>
+</body>
+</html>
+  

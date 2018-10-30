@@ -90,6 +90,7 @@
           <div class="col-lg-6 my-auto showcase-text">
             <h2>Web scraping - Today's Interest Rate</h2>
             {{news_scrap.html_table|safe}}
+            <br>
             <h5>{{news_scrap.news_block}}</h5>
             <p class="font-weight-light mb-0">{{news_scrap.news_p}}</p>
           </div>
@@ -100,20 +101,24 @@
     <!-- Latest Real Estate News -->
     <section class="testimonials text-center bg-light">
       <div class="container">
-        <a class="mb-5" href="{{url_for('static',filename='html/housing_price_states_map.html')}}" >Recent</a>
+        <a class="mb-5" href="{{url_for('static',filename='html/housing_price_states_map.html')}}" >SUMMARY</a>
         <div class="row">
           <div class="col-lg-4">
             <div class="testimonial-item mx-auto mb-5 mb-lg-0">
               <img class="img-fluid rounded-circle mb-3" src="{{url_for('static',filename='image/money.png')}}" alt="">
-              <button type="button" class="btn btn-light" href="{{url_for('static',filename='html/housing_price_states_map.html')}}">Average Income</button>
-              <p class="font-weight-light mb-0">Average income of the 50 states.</p>
+              <br>
+              <a class="mb-5" href="{{url_for('static',filename='html/2018_average_home_price_and_income.html')}}">Average Home price and Income</a>
+              <!--<button type="button" class="btn btn-light" href="{{url_for('static',filename='html/housing_price_states_map.html')}}">Average Income</button>-->
+              <p class="font-weight-light mb-0">Average home price and income of the 50 states.</p>
             </div>
           </div>
 
           <div class="col-lg-4">
             <div class="testimonial-item mx-auto mb-5 mb-lg-0">
               <img class="img-fluid rounded-circle mb-3" src="{{url_for('static',filename='image/crime.jpg')}}" alt="">
-              <button type="button" class="btn btn-light" href="{{url_for('static',filename='html/housing_price_states_map.html')}}">Pricing</button>
+              <br>
+              <a class="mb-5" href="{{url_for('static',filename='html/crime_index_for_50states.html')}}">Crime</a>
+              <!--<button type="button" class="btn btn-light" href="{{url_for('static',filename='html/housing_price_states_map.html')}}">Pricing</button>-->
               <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
@@ -129,8 +134,10 @@
           <div class="col-lg-4">
             <div class="testimonial-item mx-auto mb-5 mb-lg-0">
               <img class="img-fluid rounded-circle mb-3" src="{{url_for('static',filename='image/people.png')}}" alt="">
+              <br>
               <!--modals-->
-              <button type="button" class="btn btn-light" href="{{url_for('static',filename='html/housing_price_states_map.html')}}">Less Populated</button>
+              <a class="mb-5" href="{{url_for('static',filename='html/Less_populate.html')}}">Least population states</a>
+              <!--<button type="button" class="btn btn-light" href="{{url_for('static',filename='html/housing_price_states_map.html')}}">Less Populated</button>-->
 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal_content">
