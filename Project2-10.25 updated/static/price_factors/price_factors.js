@@ -63,13 +63,13 @@ function renderCircles(circlesGroup, newXScale, chosenXaxis) {
 // function used for updating circles group with new tooltip
 function updateToolTip(chosenXAxis, circlesGroup) {
 
-  if (chosenXAxis === "Median Household Income") {
+  if (chosenXAxis === "income") {
     var label = "Median Household Income:";
-  } else if (chosenXAxis === "Population") {
+  } else if (chosenXAxis === "population") {
     var label = "Population:";
-  } else if (chosenXAxis === "Median Age") {
+  } else if (chosenXAxis === "age") {
     var label = "Median Age:";
-  } else if (chosenXAxis === "Poverty Rate") {
+  } else if (chosenXAxis === "poverty") {
     var label = "Poverty Rate:";
   } else {
     var label = "Crime Rate:";
